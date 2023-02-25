@@ -12,10 +12,10 @@ export default function Nav() {
           <span>About me</span>
           {/* <span class="rightText secondary">xxxxxx</span> */}
         </a>
-        <a href="/projects" class="navItem">
-          <span>Projects</span>
-          <span class="rightText secondary">3+</span>
-        </a>
+        <button class="navItem">
+          <span>Blog</span>
+          {/* <span class="rightText secondary">3+</span> */}
+        </button>
       </div>
       {/* nav right*/}
       <div class="navRight">

@@ -62,5 +62,5 @@ export const posts = [
 ];
 
 export function getPosts(limit = 6) {
-  return posts;
+  return posts.slice(0, limit);
 }

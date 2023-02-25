@@ -1,20 +1,26 @@
-import logo from "./logo.svg";
 import "./App.css";
-import Nav from "./Nav";
-import ProfileColumn from "./ProfileColumn";
-import CardItem from "./CardItem";
+import Nav from "./components/Nav/Nav";
+import ProfileColumn from "./components/ProfileColumn";
+import CardItem from "./components/CardItem";
 import { getPosts } from "./data/posts";
-import { useState } from "react";
 
 function App() {
-  // const [posts, setPosts] = useState([]);
+  const posts = getPosts();
 
   return (
     <>
       <Nav />
       <div class="contentContainer">
         <ProfileColumn />
-        <CardItem title="" description="" imageUrl="" />
+        <div className="flex flex-row flex-wrap justify-start w-full gap-3 mt-3">
+          {posts.map((post) => (
+            <CardItem
+              title={post.title}
+              description={post.description}
+              imageUrl={post.imageUrl}
+            />
+          ))}
+        </div>
       </div>
     </>
   );

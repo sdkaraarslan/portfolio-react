@@ -9,7 +9,7 @@
     }
 }
 
-.navLeft > a {
+.navLeft > * {
     border-radius: 50px;
     border-color: var(--text-white);
     border-width: 2px;
@@ -25,28 +25,28 @@
     align-items: center;
 }
 
-.navLeft > a:hover {
+.navLeft > *:hover {
     background: rgba(var(--rgb-text-white), 0.5);
     transition: all;
     transition-duration: 200ms;
 }
 
-.navLeft > a > .rightText {
+.navLeft > * > .rightText {
     padding: 5px;
     padding-left: 8px;
     border-radius: 50px;
 }
 
-.navLeft > a > .rightText.primary {
+.navLeft > * > .rightText.primary {
     background: var(--primary-color);
 }
 
-.navLeft > a > .rightText.secondary {
+.navLeft > * > .rightText.secondary {
     background: var(--secondary-color);
     color: var(--bg-color);
 }
 
-.navLeft > a > .rightText.third {
+.navLeft > * > .rightText.third {
     background: var(--third-color);
     color: var(--bg-color);
 }
