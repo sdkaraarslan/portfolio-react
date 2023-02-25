@@ -1,0 +1,73 @@
+.navLeft {
+    flex: 1;
+    display: flex;
+}
+
+@media only screen and (min-width: 768px) {
+    .navLeft {
+        max-width: 768px;
+    }
+}
+
+.navLeft > a {
+    border-radius: 50px;
+    border-color: var(--text-white);
+    border-width: 2px;
+    border-style: solid;
+
+    margin: 0 5px;
+    padding: 8px;
+    padding-left: 13px;
+    flex: 1;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navLeft > a:hover {
+    background: rgba(var(--rgb-text-white), 0.5);
+    transition: all;
+    transition-duration: 200ms;
+}
+
+.navLeft > a > .rightText {
+    padding: 5px;
+    padding-left: 8px;
+    border-radius: 50px;
+}
+
+.navLeft > a > .rightText.primary {
+    background: var(--primary-color);
+}
+
+.navLeft > a > .rightText.secondary {
+    background: var(--secondary-color);
+    color: var(--bg-color);
+}
+
+.navLeft > a > .rightText.third {
+    background: var(--third-color);
+    color: var(--bg-color);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+/* nav sections (left and right) */
+.nav > div {
+    margin: 0 10px;
+}
+
+.navRight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navRight > .socialIcon {
+    margin: 0 5px;
+}

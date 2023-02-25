@@ -1,38 +1,39 @@
-.App {
-  text-align: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-color: #3C4048;
+  --text-white: #EAEAEA;
+  --primary-color: #43a2cb;
+  --secondary-color: #B2B2B2;
+  --third-color: #f5a962;
+
+  --rgb-bg-color: 60, 64, 72;
+  --rgb-text-white: 234, 234, 234;
+  --rgb-primary-color: 67, 162, 203;
+  --rgb-secondary-color: 178, 178, 178;
+  --rgb-third-color: 245, 169, 98;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html, body {
+  background: var(--bg-color);
+  color: var(--text-white);
+  margin: 0;
+  padding: 0;
+  font-family: 'Mulish', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.contentContainer {
+  margin: 0 5px;
+  padding: 8px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+* {
+  box-sizing: border-box;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
 }

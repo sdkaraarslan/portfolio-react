@@ -1,0 +1,51 @@
+.profileColumn {
+    background: rgba(var(--rgb-primary-color), .5);
+    width: 100%;
+    padding-top: 75px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 15px;
+
+    display: flex;
+    justify-content: space-between;
+
+    border-radius: 25px;
+}
+
+.profileColumn > .leftSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profileColumn > .leftSection > .fullname {
+    font-size: xx-large;
+    display: flex;
+    flex-direction: column;
+}
+
+.profileColumn > .leftSection > .job-names {
+    margin: 20px 0;
+}
+
+.profileColumn > .leftSection > .job-names > .job-name {
+    border-color: var(--text-white);
+    border-width: 1px;
+    border-style: solid;
+    padding: 5px;
+    padding-left: 8px;
+    border-radius: 50px;
+    margin-right: 5px;
+    font-size: small;
+}
+
+.profileColumn > .rightSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profileColumn > .rightSection > .profile-photo {
+    width: 152px;
+    border-radius: 100%;
+}
