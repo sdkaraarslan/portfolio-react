@@ -12,7 +12,7 @@ function App() {
       <Nav />
       <div class="contentContainer">
         <ProfileColumn />
-        <div className="flex flex-row flex-wrap justify-start w-full gap-3 mt-3">
+        <div className="flex flex-row flex-wrap justify-start w-full gap-3 mt-3 max-w-[100vw]">
           {posts.map((post) => (
             <CardItem
               title={post.title}
