@@ -3,9 +3,9 @@ import "./ProfileColumn.css";
 
 export default function ProfileColumn() {
   return (
-    <div class="profileColumn">
-      <div class="leftSection">
-        <span class="fullname">Süheyla Dilşat Karaarslan</span>
+    <div className="profileColumn">
+      <div className="leftSection">
+        <span className="fullname">Süheyla Dilşat Karaarslan</span>
         <a
           href="mailto:sdkaraarslan@gmail.com"
           className="bg-bg hover:bg-opacity-50 text-text rounded-3xl py-1.5 px-2 mt-3 w-36 font-semibold flex items-center gap-3"
@@ -20,8 +20,8 @@ export default function ProfileColumn() {
           <span class="job-name"> UAS Pilot </span>
         </div> */}
       </div>
-      <div class="rightSection">
-        <img class="profile-photo" src="/assets/me.jpg" alt="me.jpg" />
+      <div className="rightSection">
+        <img className="profile-photo" src="/assets/me.jpg" alt="me.jpg" />
       </div>
     </div>
   );

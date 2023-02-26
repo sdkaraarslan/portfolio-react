@@ -6,7 +6,7 @@ export default function Nav() {
   const [navItemsShown, setNavItemsShown] = useState(false);
 
   return (
-    <div class="nav">
+    <div className="nav">
       {/* nav left */}
 
       <div
@@ -15,14 +15,14 @@ export default function Nav() {
           " navLeft md:flex absolute md:relative bg-bg outline outline-primary md:outline-none rounded-lg left-1.5 md:left-0 top-20 md:top-0"
         }
       >
-        <a href="/" class="navItem">
+        <a href="/" className="navItem">
           <span>Homepage</span>
         </a>
-        <a href="/about-me" class="navItem">
+        <a href="/about-me" className="navItem">
           <span>About me</span>
           {/* <span class="rightText secondary">xxxxxx</span> */}
         </a>
-        <a href="/blog" class="navItem">
+        <a href="/blog" className="navItem">
           <span>Blog</span>
           {/* <span class="rightText secondary">3+</span> */}
         </a>
@@ -35,19 +35,19 @@ export default function Nav() {
         <Icon icon="ic:round-menu" width="2.5em" />
       </button>
       {/* nav right*/}
-      <div class="navRight">
+      <div className="navRight">
         {/* icon-park-solid:youtube */}
         <a
           href="https://www.youtube.com/@sdkaraarslan"
           target="_blank"
-          class="socialIcon"
+          className="socialIcon"
         >
           <Icon icon="icon-park-solid:youtube" width="2.5em" />
         </a>
         <a
           href="https://github.com/sdkaraarslan"
           target="_blank"
-          class="socialIcon"
+          className="socialIcon"
         >
           {/* icon-park:github */}
           <Icon
@@ -60,14 +60,14 @@ export default function Nav() {
         <a
           href="https://www.linkedin.com/in/sdkaraarslan/"
           target="_blank"
-          class="socialIcon"
+          className="socialIcon"
         >
           <Icon icon="uil:linkedin" width="2.5em" />
         </a>
         <a
           href="https://stackoverflow.com/users/9705361/sdkaraarslan"
           target="_blank"
-          class="socialIcon"
+          className="socialIcon"
         >
           {/* mdi:stackoverflow */}
           <Icon icon="mdi:stackoverflow" width="2.5em" />

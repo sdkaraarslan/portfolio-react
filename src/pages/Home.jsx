@@ -13,6 +13,7 @@ export default function Home() {
             title={post.title}
             description={post.description}
             imageUrl={post.imageUrl}
+            link={post.link ?? "#"}
           />
         ))}
       </div>
