@@ -3,17 +3,11 @@
 @tailwind utilities;
 
 :root {
-  --bg-color: #3C4048;
-  --text-white: #EAEAEA;
-  --primary-color: #43a2cb;
-  --secondary-color: #B2B2B2;
-  --third-color: #f5a962;
-
-  --rgb-bg-color: 60, 64, 72;
-  --rgb-text-white: 234, 234, 234;
-  --rgb-primary-color: 67, 162, 203;
-  --rgb-secondary-color: 178, 178, 178;
-  --rgb-third-color: 245, 169, 98;
+  --bg-color: theme('colors.bg');
+  --text-white: theme('colors.text');
+  --primary-color: theme('colors.primary');
+  --secondary-color: theme('colors.secondary');
+  --third-color: theme('colors.third');
 }
 
 html, body {

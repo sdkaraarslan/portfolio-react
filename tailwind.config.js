@@ -4,12 +4,15 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#43a2cb",
+        primary: "#6f6767",
         secondary: "#B2B2B2",
         third: "#f5a962",
-        bg: "#3C4048",
+        bg: "#EAEAEA",
+        text: "#6f6767",
+        navicon: "#6f6767",
+        "profile-text": "#fff",
       },
     },
   },
-  plugins: [require("@tailwindcss/line-clamp")],
+  plugins: [require("@tailwindcss/line-clamp"), require("flowbite/plugin")],
 };
