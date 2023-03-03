@@ -11,6 +11,7 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.8.1",
     "react-scripts": "5.0.1",
+    "slugify": "^1.6.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -38,8 +39,10 @@
     ]
   },
   "devDependencies": {
+    "@directus/sdk": "^10.3.1",
     "@iconify/react": "^4.1.0",
     "@tailwindcss/line-clamp": "^0.4.2",
+    "tailgrids": "^2.0.1",
     "tailwindcss": "^3.2.7"
   }
 }
