@@ -1,74 +1,73 @@
 .navLeft {
-    flex: 1;
+  flex: 1;
 }
 
 @media only screen and (min-width: 768px) {
-    .navLeft {
-        max-width: 768px;
-    }
+  .navLeft {
+    max-width: 768px;
+  }
 
-    .navLeft > * {
-        border-width: 2px;
-        padding-left: 13px;
-}
+  .navLeft > * {
+    border-width: 2px;
+    padding-left: 13px;
+    border-radius: 50px;
+  }
+  .navLeft > *:hover {
+    @apply transition-all duration-200 bg-bg hover:bg-white/50;
+  }
 }
 
 .navLeft > * {
-    border-radius: 50px;
-    border-color: var(--text-white);
-    border-style: solid;
+  border-color: var(--text-white);
+  border-style: solid;
 
-    margin: 0 5px;
-    padding: 8px;
-    padding-left: 8px;
-    flex: 1;
+  margin: 0 5px;
+  padding: 8px;
+  padding-left: 8px;
+  flex: 1;
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.navLeft > *:hover {
-    @apply transition-all duration-200 bg-bg hover:bg-white/50;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navLeft > * > .rightText {
-    padding: 5px;
-    padding-left: 8px;
-    border-radius: 50px;
+  padding: 5px;
+  padding-left: 8px;
+  border-radius: 50px;
 }
 
 .navLeft > * > .rightText.primary {
-    background: var(--primary-color);
+  background: var(--primary-color);
 }
 
 .navLeft > * > .rightText.secondary {
-    background: var(--secondary-color);
-    color: var(--bg-color);
+  background: var(--secondary-color);
+  color: var(--bg-color);
 }
 
 .navLeft > * > .rightText.third {
-    background: var(--third-color);
-    color: var(--bg-color);
+  background: var(--third-color);
+  color: var(--bg-color);
 }
 
 .nav {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
 }
 
 /* nav sections (left and right) */
 .nav > div {
-    margin: 0 10px;
+  margin: 0 10px;
 }
 
 .navRight {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .navRight > .socialIcon {
-    margin: 0 5px;
+  margin: 0 5px;
 }
