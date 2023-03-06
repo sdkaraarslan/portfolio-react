@@ -1,5 +1,4 @@
 import { getPosts } from "../data/posts";
-import { slugify } from "../lib/slugify";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import TagSelector from "../components/TagSelector/TagSelector";
@@ -10,7 +9,7 @@ export default function Blog() {
 
   let [posts, setPosts] = useState([]);
   useEffect(() => {
-    getPosts({}).then((result) => {
+    getPosts({ category: params.category }).then((result) => {
       setPosts(result.data);
     });
   }, []);
@@ -18,7 +17,13 @@ export default function Blog() {
   const [tagItems, setTagItems] = useState([]);
   useEffect(() => {
     getCategories().then((result) => {
-      setTagItems(result.data);
+      setTagItems(
+        result.data.map((item) => ({
+          ...item,
+          link: `/blog/${item.slug}`,
+          name: item.title,
+        }))
+      );
     });
   }, []);
 
@@ -49,7 +54,7 @@ export default function Blog() {
                   <div className="mb-8 overflow-hidden rounded">
                     <img
                       src={
-                        process.env.REACT_APP_ASSETS_PREFIX + post.thumbnail.id
+                        process.env.REACT_APP_ASSETS_PREFIX + post.thumbnail?.id
                       }
                       alt=""
                       className="w-full"
@@ -61,12 +66,7 @@ export default function Blog() {
                     </span>
                     <h3>
                       <a
-                        href={
-                          "/blog/" +
-                          slugify(post.category.name) +
-                          "/" +
-                          slugify(post.title)
-                        }
+                        href={"/blog/" + post.category.slug + "/" + post.slug}
                         className="text-dark text-opacity-80 hover:text-primary mb-4 inline-block text-xl font-semibold sm:text-2xl lg:text-xl xl:text-2xl"
                         alt=""
                       >

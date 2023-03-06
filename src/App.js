@@ -4,22 +4,19 @@ import Nav from "./components/Nav/Nav";
 import Home from "./pages/Home";
 import AboutMe from "./pages/AboutMe";
 import Blog from "./pages/Blog";
-import Plants from "./posts/Plants/Plants";
-import NewYearEve from "./posts/NewYearEve/NewYearEve";
+import Article from "./pages/Article";
 
 function App() {
   return (
     <>
       <Nav />
-      <div className="contentContainer">
+      <div className="contentContainer max-w-[75rem] w-full flex-1">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about-me" element={<AboutMe />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:category" element={<Blog />} />
-          <Route path="/blog/:category/:post-slug" element={<Plants />} />
-          <Route path="/blog/new-years-eve" element={<NewYearEve />} />
-          {/* <Route path="/blog/travelling/1" element={<Article1 />} /> */}
+          <Route path="/blog/:category/:postslug" element={<Article />} />
         </Routes>
       </div>
     </>
