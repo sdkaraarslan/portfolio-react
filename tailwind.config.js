@@ -11,6 +11,8 @@ module.exports = {
         text: "#6f6767",
         navicon: "#6f6767",
         "profile-text": "#fff",
+        aboutme: "#383838",
+        artictle: "#383838",
       },
     },
   },

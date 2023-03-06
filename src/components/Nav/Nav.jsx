@@ -6,7 +6,7 @@ export default function Nav() {
   const [navItemsShown, setNavItemsShown] = useState(false);
 
   return (
-    <div className="nav">
+    <div className="nav w-full">
       {/* nav left */}
 
       <div

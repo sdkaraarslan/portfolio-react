@@ -11,8 +11,18 @@ export default function AboutMe() {
 
   return (
     <>
-      <h1 className="text-3xl font-semibold">About Me</h1>
-      <div dangerouslySetInnerHTML={{ __html: aboutMe.content }}></div>
+      <div className="">
+        <img
+          className="w-full rounded-xl shadow-md"
+          src={process.env.REACT_APP_ASSETS_PREFIX + aboutMe.banner}
+          alt=""
+        />
+      </div>
+      <h1 className="text-3xl font-semibold text-aboutme mt-3">About Me</h1>
+      <div
+        className="text-aboutme text-opacity-90"
+        dangerouslySetInnerHTML={{ __html: aboutMe.content }}
+      ></div>
     </>
   );
 }

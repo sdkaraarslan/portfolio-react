@@ -2,7 +2,6 @@ import ProfileColumn from "../components/ProfileColumn";
 import CardItem from "../components/CardItem";
 import { getPosts } from "../data/posts";
 import { useEffect, useState } from "react";
-import { slugify } from "../lib/slugify";
 
 export default function Home() {
   let [posts, setPosts] = useState([]);
@@ -22,9 +21,7 @@ export default function Home() {
             title={post.title}
             description={post.description}
             imageUrl={process.env.REACT_APP_ASSETS_PREFIX + post.thumbnail.id}
-            link={
-              "/blog/" + slugify(post.category.name) + "/" + slugify(post.title)
-            }
+            link={"/blog/" + post.category.slug + "/" + post.slug}
           />
         ))}
       </div>
