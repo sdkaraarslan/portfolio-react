@@ -8,7 +8,7 @@ export default function ProfileColumn() {
         <span className="fullname">Süheyla Dilşat Karaarslan</span>
         <a
           href="mailto:sdkaraarslan@gmail.com"
-          className="bg-bg hover:bg-opacity-50 text-text rounded-2xl py-1 px-1 mt-3 w-36 font-semibold text-sm flex items-center justify-center gap-3"
+          className="bg-bg bg-opacity-80 hover:bg-opacity-50 text-text rounded-2xl py-1 px-1 mt-3 w-36 font-semibold text-sm flex items-center justify-center gap-3"
         >
           <span>Contact Me</span>
           <Icon icon="mdi:message-fast-outline" width={28} />
