@@ -12,7 +12,7 @@ export default function Nav() {
       <div
         className={
           (navItemsShown ? "" : "hidden") +
-          " navLeft md:flex absolute md:relative bg-bg left-0 md:left-0 top-20 w-full md:top-0"
+          " navLeft border-b border-secondary md:border-none md:flex absolute md:relative bg-bg left-0 md:left-0 top-20 w-full md:top-0"
         }
       >
         <a href="/" className="navItem">

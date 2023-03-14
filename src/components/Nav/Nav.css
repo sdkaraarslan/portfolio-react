@@ -15,6 +15,11 @@
   .navLeft > *:hover {
     @apply transition-all duration-200 bg-bg hover:bg-white/50;
   }
+
+  /* nav sections (left and right) */
+  .nav > div {
+    margin: 0 10px;
+  }
 }
 
 .navLeft > * {
@@ -55,11 +60,6 @@
   display: flex;
   justify-content: space-between;
   margin: 20px 0;
-}
-
-/* nav sections (left and right) */
-.nav > div {
-  margin: 0 10px;
 }
 
 .navRight {
