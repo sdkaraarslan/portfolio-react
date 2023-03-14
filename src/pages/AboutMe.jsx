@@ -1,5 +1,6 @@
 import { getAboutMe } from "../data/common";
 import { useEffect, useState } from "react";
+import "./WYSIWYG.css";
 
 export default function AboutMe() {
   const [aboutMe, setAboutMe] = useState({ content: "Loading..." });
@@ -20,7 +21,7 @@ export default function AboutMe() {
       </div>
       <h1 className="text-3xl font-semibold text-aboutme mt-3">About Me</h1>
       <div
-        className="text-aboutme text-opacity-90"
+        className="text-aboutme text-opacity-90 pb-24 wysiwyg"
         dangerouslySetInnerHTML={{ __html: aboutMe.content }}
       ></div>
     </>
